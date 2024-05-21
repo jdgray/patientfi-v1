@@ -1,0 +1,55 @@
+.Sort-select-wrapper {
+  position: relative;
+  user-select: none;
+  height: 32px;
+
+  @media screen and (max-width: 640px) {
+    height: 24px;
+  }
+
+  .Sort-select-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 32px;
+    border: 1px solid var(--subsidiary-laguna-3);
+    -webkit-appearance: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--subsidiary-carbon-3);
+    background: transparent;
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  .Sort-select-button-mobile {
+    display: none;
+
+    @media screen and (max-width: 640px) {
+      display: block;
+    }
+  }
+
+  .Sort-select-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--subsidiary-white-main);
+    margin-top: 20px;
+    padding: 21px 19px 11px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    width: 160px;
+
+    option {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--subsidiary-carbon-3);
+      line-height: 19.5px;
+      margin-bottom: 16px;
+    }
+  }
+}

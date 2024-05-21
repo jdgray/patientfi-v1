@@ -1,0 +1,74 @@
+.header__container {
+  height: 90px;
+  background: var(--patientfi-white-main);
+  color: var(--patientfi-carbon-1);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 24px;
+
+  .header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: var(--home-page-block-content-width);
+    border-bottom: 3px solid var(--patientfi-laguna-1);
+    margin: auto;
+    font-weight: bold;
+
+    &.no-border {
+      border-bottom: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      border-bottom: none;
+    }
+
+    .header-logo__wrapper {
+      margin-top: 8px;
+
+      @media screen and (max-width: 768px) {
+        img {
+          width: 139px;
+          height: 32px;
+        }
+      }
+    }
+
+    .switch-to__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 8px 0 0 16px;
+      flex-grow: 1;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      .switch-to__logo {
+        margin: 0 8px 0 2px;
+      }
+
+      .switch-to__icon {
+        margin-top: 3px;
+      }
+
+      .search__wrapper {
+        width: 100%;
+        max-width: 510px;
+        margin-left: 28px;
+      }
+    }
+
+    .header__mobile-search-wrapper {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}

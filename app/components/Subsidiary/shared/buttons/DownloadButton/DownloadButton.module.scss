@@ -1,0 +1,36 @@
+.contained-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 21px 27px;
+  align-items: center;
+  width: 233px;
+  height: 44px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: none;
+  color: var(--subsidiary-white-main);
+  background: var(--subsidiary-accent-1);
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    height: 65px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+
+    @media screen and (max-width: 640px) {
+      opacity: unset;
+    }
+  }
+
+  .contained-button__icon {
+    margin-left: 16px;
+  }
+}

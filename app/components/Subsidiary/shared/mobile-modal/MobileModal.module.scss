@@ -1,0 +1,22 @@
+.mobileModal__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--subsidiary-carbon-3);
+  z-index: 11;
+  padding: 11px 25px;
+
+  .title-close {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--subsidiary-white-main);
+    }
+  }
+}

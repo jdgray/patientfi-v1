@@ -1,0 +1,37 @@
+.search-input__container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 572px;
+
+  .search-input__input {
+    width: 100%;
+    border: 3px solid var(--patientfi-laguna-1);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 100px;
+    padding: 0 75px 0 25px;
+    color: var(--patientfi-carbon-1);
+    box-sizing: border-box;
+    height: 60px;
+
+    &::placeholder {
+      color: var(--patientfi-carbon-1);
+    }
+    &:focus-visible {
+      outline: 1px solid var(--patientfi-laguna-1);
+    }
+  }
+
+  .search-input__icon-wrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 60px;
+    border-radius: 0 100px 100px 0;
+    cursor: pointer;
+  }
+}

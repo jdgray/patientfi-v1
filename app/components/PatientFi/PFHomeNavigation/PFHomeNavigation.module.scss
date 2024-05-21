@@ -1,0 +1,32 @@
+.home__navigation-container {
+  height: 66px;
+  background: var(--patientfi-laguna-1);
+  max-width: calc(var(--home-page-block-width) + 48px);
+  padding: 0 24px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+   margin: 62px 0 0;
+  }
+
+  @media screen and (max-width: 658px) {
+    height: 306px;
+    background: var(--patientfi-laguna-1);
+  }
+
+  .home__navigation-buttons-container {
+    position: relative;
+    top: -35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 ;
+    max-width: var(--home-page-block-content-width);
+    margin: auto;
+    gap: 19px 11px;
+
+    @media screen and (max-width: 642px) {
+      justify-content: center;
+    }
+  }
+}

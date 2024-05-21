@@ -1,0 +1,25 @@
+.outlined-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+  width: 100%;
+  max-width: 211px;
+  height: 44px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid #EDA044;
+  border-radius: 32px;
+  background: #ffffff;
+;
+  &:hover {
+    opacity: 0.9;
+  }
+
+  .outlined-button__icon {
+    margin-left: 10px;
+  }
+}

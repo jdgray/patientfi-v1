@@ -1,0 +1,19 @@
+.SubsidiaryDetails__container {
+  background: var(--subsidiary-laguna-6-opacity);
+  padding: 0 16px;
+  flex-grow: 1;
+
+  .mobile-download-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    display: none;
+
+    @media screen and (max-width: 640px) {
+      display: block;
+    }
+  }
+}

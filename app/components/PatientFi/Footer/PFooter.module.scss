@@ -1,0 +1,97 @@
+.footer__container {
+  background: var(--patientfi-grey-main);
+  .footer__wrapper {
+    max-width: 1440px;
+    padding: 61px 100px 67px;
+    margin: auto;
+
+    @media screen and (max-width: 768px) {
+      padding: 61px 24px 116px;
+    }
+
+    .logo__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 30px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--patientfi-laguna-1);
+    }
+    .navigation-social__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: capitalize;
+      font-size: 14px;
+      font-weight: 500;
+      flex-wrap: wrap;
+      gap: 24px 0;
+
+      .navigation {
+        @media screen and (max-width: 768px) {
+          width: 100%;
+
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 24px 24px;
+          li{
+            a {
+              text-decoration: none;
+              color: var(--patientfi-black-main);
+            }
+          }
+        }
+      }
+
+      .social {
+        a:not(:last-child) {
+          margin-right: 25px;
+        }
+      }
+    }
+    .policy__wrapper {
+      font-size: 9px;
+      font-weight: 300;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: var(--patientfi-carbon-3);
+      margin-top: 27px;
+      flex-wrap: wrap;
+      gap: 16px 16px;
+
+      .rights {
+        max-width: 464px;
+      }
+
+      .terms {
+        display: flex;
+        flex-direction: row;
+        a {
+          color: var(--patientfi-carbon-3);
+          text-decoration: none;
+        }
+        .vertical-divider {
+          height: 10px;
+          border-left: 1px solid var(--patientfi-laguna-1);
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  .footer__background-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}

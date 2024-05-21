@@ -1,0 +1,14 @@
+.sort-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
+  .Sort-select-options {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--subsidiary-white-main);
+    option {
+      margin-bottom: 23px;
+    }
+  }
+}

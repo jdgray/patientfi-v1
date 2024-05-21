@@ -1,0 +1,107 @@
+.ResourceCards__container {
+  padding: 0 24px;
+  flex-grow: 1;
+
+  .Search__filter-sort-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    max-width: var(--home-page-block-content-width);
+    margin: 52px auto 0;
+    border-bottom: 3px solid var(--patientfi-laguna-1);
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 640px) {
+      margin: 34px auto 0;
+    }
+
+
+    .Search__info {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      color: var(--subsidiary-carbon-3);
+      font-weight: 500;
+      max-width: 800px;
+      flex-wrap: wrap;
+      gap: 17px 17px;
+
+      @media screen and (max-width: 640px) {
+        max-width: 75%;
+      }
+
+
+      .Search__info-text {
+        display: flex;
+        align-items: flex-end;
+        font-size: 24px;
+        word-break: break-word;
+      }
+
+      a {
+        font-size: 16px;
+        color: inherit;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 5px;
+      }
+    }
+
+    .Search__filter-sort {
+      display: flex;
+      justify-content: center;
+      gap: 0 10px;
+
+      .Search__sort-select,
+      .Search__filter-select {
+        width: 160px;
+        height: 44px;
+        border: 2px solid var(--subsidiary-carbon-3);
+        -webkit-appearance: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--subsidiary-carbon-3);
+        background: transparent;
+      }
+    }
+  }
+
+  .ResourceCards__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--home-page-block-content-width);
+    margin: auto;
+    border-bottom: 3px solid var(--patientfi-laguna-1);
+    padding: 49px 0 20px;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--patientfi-carbon-1);
+      text-transform: capitalize;
+      margin: 0;
+    }
+  }
+
+  .ResourceCards__result-wrapper {
+    max-width: var(--home-page-block-content-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 34px 16px;
+    margin: auto;
+    padding: 52px 0 85px;
+
+    @media screen and (max-width: 1215px) {
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 430px) {
+      padding: 40px 0;
+    }
+  }
+}

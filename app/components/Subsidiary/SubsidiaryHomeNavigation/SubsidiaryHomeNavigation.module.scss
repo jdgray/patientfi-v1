@@ -1,0 +1,26 @@
+.home__navigation-container {
+  height: 59px;
+  padding: 0 16px;
+
+  @media screen and (max-width: 642px) {
+    height: 216px;
+    background: var(--subsidiary-laguna-6-opacity);
+  }
+
+  .home__navigation-buttons-container {
+    position: relative;
+    top: 31px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 ;
+    max-width: var(--home-page-block-content-width);
+    margin: auto;
+    gap: 19px 11px;
+
+    @media screen and (max-width: 642px) {
+      justify-content: center;
+      top: -25px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.Sort-select-wrapper {
+  position: relative;
+  user-select: none;
+  height: 32px;
+
+  @media screen and (max-width: 640px) {
+    height: 24px;
+  }
+
+  .Sort-select-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
+    height: 32px;
+    -webkit-appearance: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--subsidiary-carbon-3);
+    background: transparent;
+
+    img {
+      margin-left: 6px;
+
+      &.opened {
+        transform: rotateZ(180deg);
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  .Sort-select-button-mobile {
+    display: none;
+
+    @media screen and (max-width: 640px) {
+      display: block;
+    }
+  }
+
+  .Sort-select-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--subsidiary-white-main);
+    margin-top: 8px;
+    padding: 21px 19px 11px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    width: 160px;
+    border-radius: 24px;
+
+    option {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--subsidiary-carbon-3);
+      line-height: 19.5px;
+      margin-bottom: 16px;
+    }
+  }
+}

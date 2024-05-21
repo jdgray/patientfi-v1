@@ -1,0 +1,19 @@
+.tag-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 12px;
+  align-items: center;
+  height: 26px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  background: #29DBC2;
+  color: #ffffff;
+  text-transform: capitalize;
+  &:hover {
+    opacity: 0.9;
+  }
+}

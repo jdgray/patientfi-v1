@@ -1,0 +1,146 @@
+.home__container {
+  width: 100%;
+  .home__banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(var(--home-page-block-content-width) + 48px);
+    margin: 34px auto 0;
+    padding: 0 24px;
+    position: relative;
+    height: 453px;
+
+    @media screen and (max-width: 768px) {
+      margin: 6px 0 0;
+      height: 200px;
+    }
+
+    .home__banner {
+      max-height: 453px;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      img {
+        width: inherit;
+      }
+    }
+
+    .home__search-input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+      max-width: 572px;
+      height: 100%;
+      margin-bottom: 65px;
+      position: relative;
+      z-index: 1;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+      }
+
+      .title {
+        font-size: 60px;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--patientfi-carbon-1);
+        margin: 0;
+
+        @media screen and (max-width: 768px) {
+            font-size: 48px;
+        }
+      }
+
+      .text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: var(--patientfi-carbon-1);
+        margin: 6px 0 16px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .home__marketing-container {
+    background: var(--patientfi-laguna-2);
+
+    .home__marketing-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: var(--home-page-block-content-width);
+      margin: auto;
+      padding: 49px 0 80px;
+
+      @media screen and (max-width: 768px) {
+        padding: 21px;
+      }
+
+      .title {
+        font-weight: 800;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--patientfi-black-main);
+        text-align: center;
+
+        @media screen and (max-width: 430px) {
+          font-weight: 500;
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+
+      .text {
+        font-size: 14px;
+        max-width: 476px;
+        color: var(--subsidiary-carbon-2);
+        text-align: center;
+        line-height: 24px;
+        margin: 8px 0 24px;
+        font-weight: 500;
+
+        &.or {
+          text-transform: uppercase;
+          margin: 12px 0;
+        }
+
+        img {
+          position: relative;
+          top: 5px;
+          left: 4px;
+        }
+      }
+
+      .outlined-button__wrapper {
+        width: 100%;
+        max-width: 323px;
+        position: relative;
+
+        @media screen and (max-width: 430px) {
+          max-width: 270px;
+        }
+
+        img {
+          position: absolute;
+          left: -60px;
+          bottom: 20px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

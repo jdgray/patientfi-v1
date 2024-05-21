@@ -1,0 +1,14 @@
+.sort-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
+  .Sort-select-options {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--patientfi-carbon-2);
+    option {
+      margin-bottom: 23px;
+    }
+  }
+}
